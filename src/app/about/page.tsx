@@ -31,7 +31,7 @@ export default function AboutPage() {
       <div className="card grid gap-8 p-8 md:grid-cols-[220px_1fr] md:items-start">
         <div className="overflow-hidden rounded-2xl border border-slate-200">
           <Image
-            src="/images/NEUMEYER-SIMON_picture.jpg"
+            src="/images/profile-photo.jpeg"
             alt="Simon Valerio Neumeyer"
             width={220}
             height={280}
