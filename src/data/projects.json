@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "lagos-public-transit-analytics",
+    "title": "Public Transit Experiment Analytics (Lagos, Nigeria)",
+    "summary": "Built daily ingestion and analytics pipelines to monitor transit usage and performance metrics for impact evaluation.",
+    "technologies": ["Python", "SQL", "Data Pipelines", "Cloud Workflows"],
+    "problem": "The project required reliable day-by-day measurement of usage and operational performance for a large public transit intervention.",
+    "approach": "Designed automated ingestion and validation flows, standardized event-level transit data, and built analytics layers for recurring KPI tracking.",
+    "results": "Enabled consistent daily monitoring, improved data reliability, and accelerated reporting for evaluation stakeholders."
+  },
+  {
+    "slug": "global-mobility-decarbonization",
+    "title": "Global Decarbonization Mobility Analytics",
+    "summary": "Worked with over 100TB of geospatial mobility data to estimate average daily travel distances across around 120 countries.",
+    "technologies": ["Python", "Geospatial Analytics", "Large-Scale Data Processing", "AWS"],
+    "problem": "The team needed globally comparable mobility indicators at high data volume and cross-country scale.",
+    "approach": "Developed scalable geospatial processing and aggregation pipelines, with careful quality checks and country-level harmonization.",
+    "results": "Delivered robust mobility distance estimates to support climate and decarbonization analysis at global scope."
+  },
+  {
+    "slug": "addis-road-safety-cv",
+    "title": "Road Safety Impact Evaluation (Addis Ababa)",
+    "summary": "Applied computer vision and ML to extract road-user behavioral metrics from video data for transport safety evaluation.",
+    "technologies": ["Python", "YOLO", "DeepSORT", "Computer Vision", "Machine Learning"],
+    "problem": "Manual extraction of traffic behavior signals from video was too slow and inconsistent for impact evaluation timelines.",
+    "approach": "Built a CV pipeline using detection and tracking models to transform raw footage into structured behavioral indicators.",
+    "results": "Reduced manual processing burden and produced repeatable safety metrics for evaluation and decision-making."
+  },
+  {
+    "slug": "kosovo-credit-impact-ml",
+    "title": "Credit Impact Evaluation (Kosovo)",
+    "summary": "Used ML and statistical analysis to identify drivers of credit access and predict potential MSME borrowers.",
+    "technologies": ["Python", "Statistical Modeling", "Machine Learning", "Feature Engineering"],
+    "problem": "The evaluation needed a data-driven framework to better understand borrower access barriers and target eligible firms.",
+    "approach": "Engineered borrower-level features, trained predictive models, and combined model outputs with interpretable statistical diagnostics.",
+    "results": "Improved identification of potential MSME borrowers and strengthened evidence for financial inclusion strategies."
+  },
+  {
+    "slug": "enterprise-cost-prediction-novartis",
+    "title": "Cost Prediction Model Refinement (Novartis)",
+    "summary": "Rewrote and refined internal cost-prediction models to improve robustness, interpretability, and business alignment.",
+    "technologies": ["Python", "Forecasting", "Model Validation", "Business Analytics"],
+    "problem": "Legacy internal models needed improved stability and clearer linkage to business performance metrics.",
+    "approach": "Refactored model logic, improved feature handling and validation, and aligned evaluation metrics with stakeholder goals.",
+    "results": "Delivered more reliable and interpretable model outputs for operational planning."
+  }
+]
