@@ -11,7 +11,7 @@
   {
     "slug": "global-mobility-decarbonization",
     "title": "Global Decarbonization Mobility Analytics",
-    "summary": "Worked with over 100TB of geospatial mobility data to estimate average daily travel distances across around 120 countries.",
+    "summary": "Worked with over 120TB of geospatial mobility data to estimate average daily travel distances across more than 150 countries.",
     "technologies": ["Python", "Geospatial Analytics", "Large-Scale Data Processing", "AWS"],
     "problem": "The team needed globally comparable mobility indicators at high data volume and cross-country scale.",
     "approach": "Developed scalable geospatial processing and aggregation pipelines, with careful quality checks and country-level harmonization.",
