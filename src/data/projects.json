@@ -1,5 +1,14 @@
 [
   {
+    "slug": "paris-lcv-stop-location-modeling",
+    "title": "French LCV Traffic Modeling (Paris)",
+    "summary": "Built a model to predict stop locations of light commercial vehicles in Paris using large LCV flow data, POI data, and employment datasets.",
+    "technologies": ["Python", "Geospatial Data Science", "Mobility Analytics", "Feature Engineering", "Machine Learning"],
+    "problem": "Urban mobility planning required granular insight into where light commercial vehicles are likely to stop, but raw movement data alone did not provide reliable stop-level predictions.",
+    "approach": "Combined large-scale LCV flow data with points-of-interest and employment-related datasets, engineered spatial context features, and trained predictive models for stop-location estimation.",
+    "results": "Improved stop-location prediction quality and produced actionable outputs for freight and urban mobility analysis."
+  },
+  {
     "slug": "lagos-public-transit-analytics",
     "title": "Public Transit Experiment Analytics (Lagos, Nigeria)",
     "summary": "Built daily ingestion and analytics pipelines to monitor transit usage and performance metrics for impact evaluation.",

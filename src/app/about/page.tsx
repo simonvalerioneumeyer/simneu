@@ -52,6 +52,10 @@ export default function AboutPage() {
             prior roles at Novartis and BCG, I have delivered forecasting, optimization, and impact-evaluation systems that turn complex
             data into measurable decisions.
           </p>
+          <p className="mt-4 text-slate-700">
+            I also work as a freelance data scientist on selected data science projects, with a focus on geospatial modeling, mobility
+            analytics, and decision-support tools for real-world operations.
+          </p>
         </div>
       </div>
 
