@@ -56,7 +56,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
         <p className="mt-2 text-slate-700">{project.problem}</p>
 
         <h2 className="mt-6 text-xl font-semibold text-slate-900">Approach</h2>
-        <p className="mt-2 text-slate-700">{project.approach}</p>
+        <p className="mt-2 whitespace-pre-line text-slate-700">{project.approach}</p>
 
         <h2 className="mt-6 text-xl font-semibold text-slate-900">Results</h2>
         <p className="mt-2 text-slate-700">{project.results}</p>
