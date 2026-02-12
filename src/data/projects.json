@@ -2,11 +2,20 @@
   {
     "slug": "paris-lcv-stop-location-modeling",
     "title": "French LCV Traffic Modeling (Paris)",
-    "summary": "Built a model to predict stop locations of light commercial vehicles in Paris using large LCV flow data, POI data, and employment datasets.",
-    "technologies": ["Python", "Geospatial Data Science", "Mobility Analytics", "Feature Engineering", "Machine Learning"],
-    "problem": "Urban mobility planning required granular insight into where light commercial vehicles are likely to stop, but raw movement data alone did not provide reliable stop-level predictions.",
-    "approach": "Combined large-scale LCV flow data with points-of-interest and employment-related datasets, engineered spatial context features, and trained predictive models for stop-location estimation.",
-    "results": "Improved stop-location prediction quality and produced actionable outputs for freight and urban mobility analysis."
+    "summary": "Built a two-part ML pipeline for Paris light commercial vehicle analysis: (1) stop-location prediction and (2) stop-duration prediction.",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "GeoPandas",
+      "NumPy",
+      "Polars",
+      "scikit-learn (NearestNeighbors, train_test_split)",
+      "XGBoost (classification and regression)",
+      "Parquet-based geospatial data pipelines"
+    ],
+    "problem": "Urban freight analysis required more than origin-destination aggregates. The core need was to estimate where LCVs are likely to stop and how long they remain there, using noisy, large-scale mobility traces enriched with land-use and economic context.",
+    "approach": "Task 1 - Stop location prediction: I prepared LCV trip start/end flows, tagged them to IRIS zones, built POI candidate sets with KNN + zone-based expansion, engineered temporal and spatial features (hour/weekday, road type/direction/modes, POI category context, zone-level POI and job frequencies), and trained an XGBoost model with hard/soft labeling and weighted training. Task 2 - Stop duration prediction: I built a duration feature table from large stop-event data (over 1.3M rows), added nearest-POI context (top 3), IRIS logistics and employment/POI features, created train/valid/test splits, and trained an XGBoost regressor for DURATION_MINUTES. Data used across the pipeline included LCV flow/stop data, POI datasets, IRIS boundaries, road-network attributes, and employment/business activity aggregates.",
+    "results": "Delivered an end-to-end modeling workflow that produced stop-level location probabilities and duration estimates, plus reusable feature pipelines and model artifacts for repeatable urban freight and mobility analysis."
   },
   {
     "slug": "lagos-public-transit-analytics",
