@@ -9,7 +9,7 @@
       "GeoPandas",
       "NumPy",
       "Polars",
-      "scikit-learn (NearestNeighbors, train_test_split)",
+      "scikit-learn",
       "XGBoost (classification and regression)",
       "Parquet-based geospatial data pipelines"
     ],
