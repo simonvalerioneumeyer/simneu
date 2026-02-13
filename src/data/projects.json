@@ -24,8 +24,8 @@
     "technologies": ["Python", "API Data Pipelines", "Geospatial Analytics", "Impact Evaluation Analytics"],
     "problem": "The project required reliable daily tracking of public transport usage for an RCT, plus robust spatial preparation of supporting datasets for research operations.",
     "approach": "I used a public transport e-ticketing API to scrape and process daily transport records, then produced recurring usage and performance metrics for the RCT. I also supported the pricing workstream by helping design and analyze the public transport ticket-pricing experiment. In parallel, I built geospatial datasets for research design, including optimal sampling areas around bus stops stratified by population and income indicators, and delivered additional technical analyses in Python for the broader study.",
-    "results": "Supported day-to-day RCT monitoring with reproducible Python analytics and contributed to the wider research output that was later published by NBER.",
-    "demoUrl": "https://www.nber.org/papers/w33899"
+    "results": "Supported day-to-day RCT monitoring with reproducible Python analytics and provided analysis inputs to the broader research effort, which was later published by NBER (I supported analysis but am not a co-author).",
+    "publicationUrl": "https://www.nber.org/papers/w33899"
   },
   {
     "slug": "global-mobility-decarbonization",

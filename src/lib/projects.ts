@@ -10,6 +10,7 @@ export type Project = {
   results: string;
   repoUrl?: string;
   demoUrl?: string;
+  publicationUrl?: string;
 };
 
 export function getAllProjects(): Project[] {

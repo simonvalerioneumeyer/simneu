@@ -73,6 +73,11 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
             Live Demo
           </Link>
         ) : null}
+        {project.publicationUrl ? (
+          <Link href={project.publicationUrl} className="link-pill">
+            Related Publication
+          </Link>
+        ) : null}
         <Link href="/projects" className="link-pill">
           Back to Projects
         </Link>
