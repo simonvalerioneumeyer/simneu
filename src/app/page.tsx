@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 import { siteConfig } from "@/lib/site";
@@ -38,6 +39,19 @@ export default function HomePage() {
           engineering across structured and unstructured data, supporting downstream ML, computer vision, geospatial analytics, and
           emerging LLM workflows in cloud environments.
         </p>
+      </div>
+
+      <div className="card p-8">
+        <h2 className="text-2xl font-semibold text-slate-900">Featured Photo</h2>
+        <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+          <Image
+            src="/images/frontpage-photo.jpeg"
+            alt="Simon Valerio Neumeyer featured portrait"
+            width={1200}
+            height={800}
+            className="h-auto w-full object-cover"
+          />
+        </div>
       </div>
     </section>
   );
