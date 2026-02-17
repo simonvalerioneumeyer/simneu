@@ -51,7 +51,7 @@
     ],
     "problem": "Manual video review could not scale across many intersections and time periods, making it difficult to produce consistent conflict and traffic indicators for baseline/follow-up evaluation.",
     "approach": "I implemented and operationalized a two-stage workflow. Stage 1 (video processing): ran YOLOv7 + DeepSORT on MP4 intersection footage to detect and track road users, and produced annotated outputs plus metadata (JSON/parquet), with batch execution and storage to S3. Stage 2 (data processing): transformed per-location parquet outputs into analysis-ready datasets using movement polygons, direction splits, geolocation/homography metadata, and baseline/follow-up logic; generated conflict and traffic aggregates, trajectory plots, short reports, and one-pager/dashboard-ready artifacts. I also supported subsampling/bootstrapping analyses to evaluate metric stability when using partial data.",
-    "results": "Delivered reproducible, scalable safety analytics across locations, reduced manual processing load, and enabled longitudinal traffic/conflict comparisons for impact evaluation reporting. The related report is currently under review and expected to be published in 2026."
+    "results": "Delivered reproducible, scalable safety analytics across locations, reduced manual processing load, and enabled longitudinal traffic/conflict comparisons for impact evaluation reporting. The related report is currently under review and expected to be published in 2026. The codebase is also being packaged for reuse in other World Bank projects."
   },
   {
     "slug": "kosovo-credit-impact-ml",
