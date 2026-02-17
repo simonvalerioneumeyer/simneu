@@ -39,11 +39,19 @@
   {
     "slug": "addis-road-safety-cv",
     "title": "Road Safety Impact Evaluation (Addis Ababa)",
-    "summary": "Applied computer vision and ML to extract road-user behavioral metrics from video data for transport safety evaluation.",
-    "technologies": ["Python", "YOLO", "DeepSORT", "Computer Vision", "Machine Learning"],
-    "problem": "Manual extraction of traffic behavior signals from video was too slow and inconsistent for impact evaluation timelines.",
-    "approach": "Built a CV pipeline using detection and tracking models to transform raw footage into structured behavioral indicators.",
-    "results": "Reduced manual processing burden and produced repeatable safety metrics for evaluation and decision-making."
+    "summary": "Built a full video-to-metrics pipeline for road safety impact evaluation, from object detection/tracking in intersection footage to conflict/traffic analytics and reporting.",
+    "technologies": [
+      "Python",
+      "YOLOv7",
+      "DeepSORT",
+      "Computer Vision",
+      "Geo/Spatial Data Processing",
+      "AWS S3",
+      "Pandas/Parquet Analytics"
+    ],
+    "problem": "Manual video review could not scale across many intersections and time periods, making it difficult to produce consistent conflict and traffic indicators for baseline/follow-up evaluation.",
+    "approach": "I implemented and operationalized a two-stage workflow. Stage 1 (video processing): ran YOLOv7 + DeepSORT on MP4 intersection footage to detect and track road users, and produced annotated outputs plus metadata (JSON/parquet), with batch execution and storage to S3. Stage 2 (data processing): transformed per-location parquet outputs into analysis-ready datasets using movement polygons, direction splits, geolocation/homography metadata, and baseline/follow-up logic; generated conflict and traffic aggregates, trajectory plots, short reports, and one-pager/dashboard-ready artifacts. I also supported subsampling/bootstrapping analyses to evaluate metric stability when using partial data.",
+    "results": "Delivered reproducible, scalable safety analytics across locations, reduced manual processing load, and enabled longitudinal traffic/conflict comparisons for impact evaluation reporting."
   },
   {
     "slug": "kosovo-credit-impact-ml",
