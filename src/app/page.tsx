@@ -16,7 +16,7 @@ export default function HomePage() {
         <div>
           <p className="text-sm font-medium tracking-widest text-accent">WELCOME</p>
           <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{siteConfig.name}</h1>
-          <p className="mt-4 text-lg text-slate-700">Data Scientist / Engineer | ML, Causal Inference, Geospatial | Python</p>
+          <p className="mt-4 text-lg text-slate-700">Data Scientist / Engineer | ML, Causal Inference, Analytics, Geospatial | Python</p>
           <p className="mt-2 text-sm text-slate-500">{siteConfig.location}</p>
 
           <div className="mt-6 flex flex-wrap gap-3">
