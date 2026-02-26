@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Data Scientist | ML & Geospatial | CV/Portfolio",
   description:
     "Senior Data Scientist / Data Engineer with 6+ years of experience building production-grade Python pipelines for analytics, machine learning, and AI systems.",
-  url: "https://your-domain.com",
+  url: "https://simon-neumeyer.org",
   email: "simon.funkneumeyer@gmail.com",
   phone: "+34 650 51 64 90",
   location: "Barcelona / Zurich",
