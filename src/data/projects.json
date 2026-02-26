@@ -30,11 +30,11 @@
   {
     "slug": "global-mobility-decarbonization",
     "title": "Global Decarbonization Mobility Analytics",
-    "summary": "Worked with over 120TB of geospatial mobility data to estimate average daily travel distances across more than 150 countries.",
-    "technologies": ["Python", "Geospatial Analytics", "Large-Scale Data Processing", "AWS"],
-    "problem": "The team needed globally comparable mobility indicators at high data volume and cross-country scale.",
-    "approach": "Developed scalable geospatial processing and aggregation pipelines, with careful quality checks and country-level harmonization.",
-    "results": "Delivered robust mobility distance estimates to support climate and decarbonization analysis at global scope."
+    "summary": "Built and scaled a global mobility measurement pipeline on over 120TB of geospatial ping data to estimate daily travel distances across more than 150 countries.",
+    "technologies": ["Python", "Pandas", "Dask", "GeoPandas", "NumPy", "AWS S3", "PyArrow/Parquet", "Large-Scale Geospatial Analytics"],
+    "problem": "The project needed globally comparable, policy-relevant mobility metrics from highly noisy device-level pings, while preserving consistency across countries with very different data coverage and quality.",
+    "approach": "I developed an end-to-end country/day processing workflow that ingested raw mobility pings from S3, mapped devices to urban areas, computed distance and speed features at segment level, and produced device-level daily distance metrics before urban-area aggregation. The pipeline applied explicit QA and harmonization rules, including daily coverage thresholds (e.g., 3-hour block filters), speed and distance outlier filtering, and traverser/non-unique movement handling. I then aggregated to urban-area/date/country indicators (mean/median distance and device counts), ran cross-country diagnostics and device-level descriptives, and implemented logistic-growth-based adjustment using observed coverage (5-minute segments) to correct for sparse sampling and improve comparability.",
+    "results": "Delivered reproducible mobility indicators and comparison tables/maps used for decarbonization analysis, with documented sensitivity checks (coverage, traverser removal, and filter configurations) to support robust interpretation across countries."
   },
   {
     "slug": "addis-road-safety-cv",
