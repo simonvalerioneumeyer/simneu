@@ -59,7 +59,18 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
         <p className="mt-2 whitespace-pre-line text-slate-700">{project.approach}</p>
 
         <h2 className="mt-6 text-xl font-semibold text-slate-900">Results</h2>
-        <p className="mt-2 text-slate-700">{project.results}</p>
+        <p className="mt-2 text-slate-700">
+          {project.results}
+          {project.publicationUrl ? (
+            <>
+              {" "}
+              <Link href={project.publicationUrl} className="font-medium text-accent hover:underline">
+                Read the paper
+              </Link>
+              .
+            </>
+          ) : null}
+        </p>
       </div>
 
       <div className="flex flex-wrap gap-3">
