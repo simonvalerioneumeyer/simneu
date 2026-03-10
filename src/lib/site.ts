@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://simon-neumeyer.org",
   email: "simon.funkneumeyer@gmail.com",
   phone: "+34 650 51 64 90",
-  location: "Barcelona / Zurich",
+  location: "Zurich, Switzerland",
   github: "https://github.com/simonvalerioneumeyer",
   linkedin: "https://www.linkedin.com/in/simon-neumeyer-b834928a/",
   social: {

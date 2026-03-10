@@ -44,9 +44,8 @@ export default function ContactPage() {
 
       <div className="card p-8">
         <h2 className="text-xl font-semibold text-slate-900">Quick Message</h2>
-        <p className="mt-2 text-slate-700">Use your default mail client with a prefilled subject line.</p>
         <Link
-          href={`mailto:${siteConfig.email}?subject=Portfolio%20Inquiry`}
+          href={`mailto:${siteConfig.email}`}
           className="mt-4 inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700"
         >
           Send Email
