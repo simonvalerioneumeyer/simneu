@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { getProjectBySlug } from "@/lib/projects";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const addisProject = getProjectBySlug("addis-road-safety-cv");
+
   return (
     <section className="space-y-8">
       <div className="card grid gap-8 p-8 sm:p-12 md:grid-cols-[1fr_280px] md:items-center">
@@ -52,6 +55,18 @@ export default function HomePage() {
           emerging LLM workflows in cloud environments.
         </p>
       </div>
+
+      {addisProject?.publicationUrl ? (
+        <div className="card p-8">
+          <h2 className="text-2xl font-semibold text-slate-900">Latest Publication</h2>
+          <p className="mt-3 text-slate-700">
+            Road safety impact evaluation work from Addis Ababa is now published by the World Bank.
+          </p>
+          <Link href={addisProject.publicationUrl} className="mt-4 inline-flex font-semibold text-accent hover:underline">
+            Read the paper
+          </Link>
+        </div>
+      ) : null}
 
     </section>
   );
