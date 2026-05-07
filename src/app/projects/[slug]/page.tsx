@@ -65,7 +65,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
             <>
               {" "}
               <Link href={project.publicationUrl} className="font-medium text-accent hover:underline">
-                Read the paper
+                {project.slug === "global-mobility-decarbonization" ? "Read the report" : "Read the paper"}
               </Link>
               .
             </>
