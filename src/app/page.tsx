@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const addisProject = getProjectBySlug("addis-road-safety-cv");
+  const pathProject = getProjectBySlug("global-mobility-decarbonization");
 
   return (
     <section className="space-y-8">
@@ -56,15 +57,27 @@ export default function HomePage() {
         </p>
       </div>
 
-      {addisProject?.publicationUrl ? (
+      {addisProject?.publicationUrl || pathProject?.publicationUrl ? (
         <div className="card p-8">
-          <h2 className="text-2xl font-semibold text-slate-900">Latest Publication</h2>
-          <p className="mt-3 text-slate-700">
-            Road safety impact evaluation work from Addis Ababa is now published by the World Bank.
-          </p>
-          <Link href={addisProject.publicationUrl} className="mt-4 inline-flex font-semibold text-accent hover:underline">
-            Read the paper
-          </Link>
+          <h2 className="text-2xl font-semibold text-slate-900">Publications</h2>
+          <div className="mt-4 space-y-3 text-slate-700">
+            {addisProject?.publicationUrl ? (
+              <p>
+                Addis Ababa road safety impact evaluation (World Bank):{" "}
+                <Link href={addisProject.publicationUrl} className="font-medium text-accent hover:underline">
+                  Read the paper
+                </Link>
+              </p>
+            ) : null}
+            {pathProject?.publicationUrl ? (
+              <p>
+                PATH decarbonization mobility report (World Bank):{" "}
+                <Link href={pathProject.publicationUrl} className="font-medium text-accent hover:underline">
+                  Read the report
+                </Link>
+              </p>
+            ) : null}
+          </div>
         </div>
       ) : null}
 
