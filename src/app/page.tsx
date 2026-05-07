@@ -65,7 +65,7 @@ export default function HomePage() {
               <p>
                 Addis Ababa road safety impact evaluation (World Bank):{" "}
                 <Link href={addisProject.publicationUrl} className="font-medium text-accent hover:underline">
-                  Read the paper
+                  Read the report
                 </Link>
               </p>
             ) : null}
