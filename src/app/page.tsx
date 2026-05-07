@@ -77,6 +77,14 @@ export default function HomePage() {
                 </Link>
               </p>
             ) : null}
+            {pathProject?.demoUrl ? (
+              <p>
+                PATH modeling dashboard:{" "}
+                <Link href={pathProject.demoUrl} className="font-medium text-accent hover:underline">
+                  Open the dashboard
+                </Link>
+              </p>
+            ) : null}
           </div>
         </div>
       ) : null}
